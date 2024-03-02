@@ -1,0 +1,25 @@
+public class GradeCalculator {
+    public static void main(String[] args) {
+        int totalMarks = 45 + 55 + 56 + 5;
+        int totalSubjects = 4;
+        double averagePercentage = (double) totalMarks / totalSubjects;
+
+        char grade;
+        if (averagePercentage >= 90) {
+            grade = 'A';
+        } else if (averagePercentage >= 80) {
+            grade = 'B';
+        } else if (averagePercentage >= 70) {
+            grade = 'C';
+        } else if (averagePercentage >= 60) {
+            grade = 'D';
+        } else {
+            grade = 'F';
+        }
+
+        System.out.println("Total Marks = " + totalMarks);
+        System.out.println("Total Subjects = " + totalSubjects);
+        System.out.println("Average Percentage = " + averagePercentage + "%");
+        System.out.println("Grade = " + grade);
+    }
+}
